@@ -1,0 +1,28 @@
+# 1. 컴파일러 및 툴체인 제외
+**/gcc-arm-none-eabi-*/
+
+# 2. 빌드 결과물 및 중간 파일 제외
+*.o
+*.obj
+*.elf
+*.bin
+*.hex
+*.map
+*.lst
+*.out
+*.axf
+
+# 3. 빌드 폴더 및 오브젝트 폴더 제외
+objects/
+Build/
+Debug/
+Release/
+
+# 4. 외부 거대 라이브러리 (필요시 제외)
+CMSIS_5/
+
+# 5. OS 및 IDE 임시 파일
+.DS_Store
+Thumbs.db
+*.uvguix.*
+*.uvoptx
